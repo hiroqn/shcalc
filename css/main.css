@@ -1,11 +1,65 @@
-/*div{
-	background-color: #777777;
-	padding:15px 5px;
-	width:40px;
-	height:20px;
-	font-size:13px;
-	text-align: center;
-}*/
+	body{
+		font:"Trebuchet MS", sans-serif;
+		margin: 50px;
+		background-color:#f6f6f6;
+	}
 #err{
 	color:red;
+}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	span.ui-icon {
+		margin:4px;
+		float: left;
+		position:relative;
+		cursor: pointer;
+	}
+
+span.float{
+	float: left;
+}
+div.clear{
+	clear: both;
+}
+span.bmargin{
+	float:left;
+	margin:2px;
+
+		position:relative;
+		cursor: pointer;
+}
+input.ui-input{
+	margin:2px;
+	padding: 4px;
+	width:30px;
+	background-color:#cccccc;
+	border: 1px solid #aaaaaa;
+}
+.button-id{
+	padding:4px;
+}
+select{
+	padding: 4px;
 }

@@ -13,10 +13,12 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="js/lib/jqeuryui/css/ui-lightness/jquery-ui-1.9.2.custom.css" />
   </head>
   <body>
 
     <script type="text/javascript" charset="utf-8" src="js/lib/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/jqeuryui/js/jquery-ui-1.9.2.custom.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/lib/underscore.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/lib/backbone.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -37,7 +39,7 @@
     	<option>9</option>
     	<option>10</option>
     </select>段
-    <select id="taku">
+    <select id="taku" class="ui-input">
     	<option value="tp">一般</option>
     	<option value="tj">上級</option>
     	<option value="tt">特上</option>
@@ -47,20 +49,48 @@
     	<option value="e">東風</option>
     	<option value="s">半荘</option>
     </select>戦<br />
-    現在のpt：<input class="pt" type="text" /><br />
-    1位率：<input class="r1" type="text" /><br />
-    2位率：<input class="r2" type="text" /><br />
-    3位率：<input class="r3" type="text" /><br />
-    4位率：<input class="r4" type="text" /><br />
-    想定試合数：<input class="vn" type="text" /><br />
+    現在のpt：<input class="pt ui-input ui-corner-all" type="text" /><br />
+    <span class="float">1位率：</span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-minus"></span></span>
+    <span class="float"><input class="r1 ui-corner-all ui-input" type="text" /></span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-plus"></span></span><br />
+    <div class="clear"></div>
+    <span class="float">2位率：</span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-minus"></span></span>
+    <span class="float"><input class="r2 ui-input ui-corner-all" type="text" /></span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-plus"></span></span><br />
+    <div class="clear"></div>
+    <span class="float">3位率：</span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-minus"></span></span>
+    <span class="float"><input class="r3 ui-input ui-corner-all" type="text" /></span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-plus"></span></span><br />
+    <div class="clear"></div>
+    <span class="float">4位率：</span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-minus"></span></span>
+    <span class="float"><input class="r4 ui-input ui-corner-all" type="text" /></span>
+    <span class="ui-widget ui-state-default ui-corner-all bmargin"><span class="ui-icon ui-icon-plus"></span></span><br />
+    <div class="clear"></div>
+
+    想定試合数：<input class="vn ui-input ui-corner-all" type="text" /><br />
     半角の整数で入力してください。(ex.1位率:300,2位率:250,3位率:250,4位率:200,pt:1200)<br />
-    <button id="view">計算</button><br />
+    <button id="view" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only button-id">計算</button><br />
     <select id="chart_select">
     	<option value="sh">pt-昇段率</option>
     	<option value="vn">pt-存在率</option>
     </select><br />
+    <button id="explain" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only button-id">使い方</button>
+    <button id="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
+<span class="ui-button-text">A button element</span>
+</button>
+<a href="#" id="dialog-link" class="ui-state-default ui-corner-all">
+	<span class="ui-icon ui-icon-newwin"></span>Open Dialog
+</a>
+<div id="dialog" title="Dialog Title">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
     <div id="err"></div>
     <div id="sh"></div>
+    <div id="check"></div>
 <div id="chart_div"></div>
   </body>
 </html>
